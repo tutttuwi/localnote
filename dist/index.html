@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LocalNote</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/markdown.css" />
+  </head>
+  <body id="cover">
+    <header id="menu">
+      <div id="menu-content-wrapper">
+        <div id="menu-icon"><img id="logo" src="./img/logo.png" alt="LocalNote" /></div>
+        <div class="menu-content">
+          <div class="dropdown-btn">
+            ファイル
+          </div>
+        </div>
+        <div class="menu-content">編集</div>
+        <div class="menu-content">選択</div>
+        <div class="menu-content">ヘルプ</div>
+      </div>
+    </header>
+    <main id="main-content">
+      <section id="sidebar">
+        <div id="sidebar-menu-wrapper">
+          <div class="sidebar-menu" data-id="explore">
+            <i class="fas fa-folder-open"></i>
+          </div>
+          <div class="sidebar-menu" data-id="search"><i class="fas fa-search"></i></div>
+          <div class="sidebar-menu" data-id="extend"><i class="fas fa-th-large"></i></div>
+          <div class="sidebar-menu" data-id="help"><i class="fas fa-question-circle"></i></div>
+        </div>
+        <div id="sidebar-content-wrapper">
+          <div id="explore" class="sidebar-content sidebar-file hide">
+            <div>エクスプローラー</div>
+            <button class="acd-btn">開いているエディタ</button>
+            <div id="openedFiles"></div>
+          </div>
+          <div id="search" class="sidebar-content sidebar-file hide">
+            <div>検索</div>
+            <button class="acd-btn">開いているエディタ</button>
+          </div>
+          <div id="extend" class="sidebar-content sidebar-file hide">
+            <div>拡張設定</div>
+            <button class="acd-btn">開いているエディタ</button>
+          </div>
+          <div id="help" class="sidebar-content sidebar-file hide">
+            <div>ヘルプ</div>
+            <button class="acd-btn">開いているエディタ</button>
+          </div>
+        </div>
+      </section>
+      <section id="note">
+        <div id="tab-content-wrapper">
+          <div id="tab-content-left"></div>
+          <div id="tab-content-right">
+            <div class="tab-opt-content">
+              <div class="action-btn toggle-viewer">
+                <i class="fas fa-columns"></i>
+              </div>
+            </div>
+            <div class="tab-opt-content">
+              <div class="dropdown-btn-right">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div class="dropdown-list">
+                <ul>
+                  <li class="action-btn view-file">開いているエディタを表示</li>
+                  <hr />
+                  <li class="action-btn close-all-flie">すべて閉じる</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="note-content-wrapper">
+          <div id="editor"># テストマークダウン</div>
+          <div id="viewer">
+            ビューワープレビュー
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="setting">
+      <div class="setting-content">Markdown</div>
+      <div class="setting-content">UTF-8</div>
+      <div class="setting-content">行 xx、列 xx</div>
+    </section>
+    <footer id="footer">
+      <div class="footer-wrapper">
+        <small
+          >&copy; LocalNote 2020-2020 | @<a class="footer-author" href="http://tutttuwi.me"
+            ><b>tutttuwi</b></a
+          ></small
+        >
+      </div>
+    </footer>
+    <div id="dropdown-overlay"></div>
+  <script type="text/javascript" src="main.08c4f0709d0136c5a175.js"></script></body>
+</html>
