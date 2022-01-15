@@ -28,6 +28,6 @@
   "dependencies": {
     "ace-builds": "^1.4.9",
     "dexie": "^2.0.4",
-    "marked": "^0.8.2"
+    "marked": "^4.0.10"
   }
 }
