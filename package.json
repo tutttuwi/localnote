@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "ace-builds": "^1.4.9",
-    "dexie": "^2.0.4",
+    "dexie": "^3.2.2",
     "marked": "^0.8.2"
   }
 }
